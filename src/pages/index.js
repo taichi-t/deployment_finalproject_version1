@@ -32,7 +32,9 @@ class IndexPage extends React.Component {
           >
             {site.titleTemplate}
           </h2>
+
           <img src={heroImage} alt="anoun-hero" />
+
           <Link to="/contact/">
             <Button raised className="mdc-button--round">
               Contact Us
@@ -75,13 +77,6 @@ class IndexPage extends React.Component {
               )
             })}
           </div>
-          <div style={{ margin: "40px 0" }}>
-            <Link to="/blog/">
-              <Button raised className="mdc-button--round">
-                Read more
-              </Button>
-            </Link>
-          </div>
         </section>
       </Layout>
     )
@@ -110,11 +105,7 @@ export const indexQuery = graphql`
           slug
           title
           image {
-            fluid(
-              maxWidth: 1200
-              quality: 92
-              sizes: "(max-width: 1200px) 100vw"
-            ) {
+            fluid(maxWidth: 500, quality: 92) {
               ...GatsbyContentfulFluid
             }
           }

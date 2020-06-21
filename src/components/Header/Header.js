@@ -24,7 +24,11 @@ class Header extends Component {
             }}
           >
             <ul style={{ alignSelf: "flex-start", textDecoration: "none" }}>
-              <img src={logo} alt="logo" />
+              <li>
+                <Link to="/">
+                  <img src={logo} alt="logo" />
+                </Link>
+              </li>
             </ul>
             <ul>
               <ListLink to={`/`}>home</ListLink>

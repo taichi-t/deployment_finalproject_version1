@@ -56,11 +56,7 @@ const blogPostQuery = graphql`
           slug
           title
           image {
-            fluid(
-              maxWidth: 1200
-              quality: 92
-              sizes: "(max-width: 1200px) 100vw"
-            ) {
+            fluid(maxWidth: 500, quality: 92) {
               ...GatsbyContentfulFluid
             }
           }
