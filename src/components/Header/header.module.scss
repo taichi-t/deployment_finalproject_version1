@@ -1,5 +1,5 @@
 .siteHeader {
-  margin: 1rem auto;
+  // margin: 1rem auto;
   font-weight: 900;
 }
 
@@ -11,12 +11,12 @@
 }
 
 .siteHeader > nav ul li {
-  display: inline;
-  margin-right: .5rem;
+  display: inline-block;
+  margin: 0 2rem 0 0;
   font-family: "Lora", serif;
-  &:hover {
-    border-bottom: 2px solid var(--mdc-theme-primary);
-  }
+}
+.siteHeader > nav ul li:last-child {
+  margin: 0;
 }
 
 .siteHeader > nav ul li a {

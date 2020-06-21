@@ -16,26 +16,25 @@ class Header extends Component {
     return (
       <header className={styles.siteHeader}>
         <nav>
-          <ul
+          <div
             style={{
               display: "flex",
               flexDirection: "column",
-              marginLeft: "10px",
             }}
           >
             <ul style={{ alignSelf: "flex-start", textDecoration: "none" }}>
-              <li>
+              <li style={{ padding: "1rem 0 0 1rem" }}>
                 <Link to="/">
-                  <img src={logo} alt="logo" />
+                  <img src={logo} alt="logo" style={{ maxWidth: "200px" }} />
                 </Link>
               </li>
             </ul>
-            <ul>
+            <ul style={{ fontSize: "1.2rem" }}>
               <ListLink to={`/`}>home</ListLink>
               <ListLink to={`/blog/`}>blog</ListLink>
               <ListLink to={`/contact/`}>contact</ListLink>
             </ul>
-          </ul>
+          </div>
         </nav>
       </header>
     )

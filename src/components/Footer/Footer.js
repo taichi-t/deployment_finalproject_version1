@@ -15,12 +15,7 @@ class Footer extends Component {
         <nav className={styles.footerNav}>
           {/* LOGO */}
           <Link to="/">
-            <img
-              src={footerLogo}
-              width="100px"
-              alt="ANOUN-logo"
-              className={styles.footerLogo}
-            />
+            <img src={footerLogo} alt="logo" className={styles.footerLogo} />
           </Link>
           <ul>
             <li>
