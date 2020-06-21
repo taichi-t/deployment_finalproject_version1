@@ -4,8 +4,6 @@ import instagramIcon from "../../images/icons/instagram-round-white-24px.svg"
 import youtubeIcon from "../../images/icons/youtube-icon-24px.svg"
 import githubIcon from "../../images/icons/github-icon-24px.svg"
 
-import footerLogo from "../../images/logo.png"
-
 import styles from "./footer.module.scss"
 
 class Footer extends Component {
@@ -15,7 +13,15 @@ class Footer extends Component {
         <nav className={styles.footerNav}>
           {/* LOGO */}
           <Link to="/">
-            <img src={footerLogo} alt="logo" className={styles.footerLogo} />
+            <p
+              style={{
+                fontSize: "2rem",
+                color: "#363636",
+                marginBottom: "1rem",
+              }}
+            >
+              Impactraction
+            </p>
           </Link>
           <ul>
             <li>

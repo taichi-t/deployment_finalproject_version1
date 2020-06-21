@@ -2,7 +2,6 @@ import { Link } from "gatsby"
 import React, { Component } from "react"
 
 import styles from "./header.module.scss"
-import logo from "../../images/logo.png"
 
 class Header extends Component {
   render() {
@@ -25,7 +24,15 @@ class Header extends Component {
             <ul style={{ alignSelf: "flex-start", textDecoration: "none" }}>
               <li style={{ padding: "1rem 0 0 1rem" }}>
                 <Link to="/">
-                  <img src={logo} alt="logo" style={{ maxWidth: "200px" }} />
+                  <p
+                    style={{
+                      fontSize: "2rem",
+                      color: "#363636",
+                      marginBottom: "1rem",
+                    }}
+                  >
+                    Impactraction
+                  </p>
                 </Link>
               </li>
             </ul>
