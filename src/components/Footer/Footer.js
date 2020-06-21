@@ -12,17 +12,7 @@ class Footer extends Component {
       <footer className={styles.siteFooter}>
         <nav className={styles.footerNav}>
           {/* LOGO */}
-          <Link to="/">
-            <p
-              style={{
-                fontSize: "2rem",
-                color: "#363636",
-                marginBottom: "1rem",
-              }}
-            >
-              Impactraction
-            </p>
-          </Link>
+
           <ul>
             <li>
               <Link to="/">Home</Link>

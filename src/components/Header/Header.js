@@ -28,6 +28,7 @@ class Header extends Component {
                     style={{
                       fontSize: "2rem",
                       color: "#363636",
+                      padding: "0.5rem",
                       marginBottom: "1rem",
                     }}
                   >
